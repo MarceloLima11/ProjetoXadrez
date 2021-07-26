@@ -50,7 +50,7 @@ namespace xadrez
                 pos.DefinirValores(pos.Linha, pos.Coluna + 1);
             }
             // Acima
-            pos.DefinirValores(Posicao.Linha, Posicao.Coluna - 1);
+            pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna);
             while (Tab.PosicaoValida(pos) && PodeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
