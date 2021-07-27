@@ -5,7 +5,7 @@ namespace xadrez
     class Peao : Peca
     {
 
-        private PartidaDeXadrez Partida;
+        private PartidaDeXadrez Partida { get; set; }
 
         public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor)
         {
